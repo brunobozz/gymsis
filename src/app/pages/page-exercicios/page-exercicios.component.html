@@ -1,0 +1,47 @@
+<app-comp-page-header
+  title="Exercícios"
+  icon="fa-shopping-bag"
+></app-comp-page-header>
+
+<div class="text-end">
+  <button
+    class="btn btn-sm btn-primary text-light"
+    routerLink="/exercicio-novo"
+  >
+    <i class="fa fa-plus"></i>
+    <span> Novo Exercício</span>
+  </button>
+</div>
+
+<table class="table table-striped table-borderless">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center" style="width: 40px">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col" class="text-center">Nº</th>
+      <th scope="col">Tipo</th>
+      <th scope="col" class="text-end">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let exercicio of exercicios; let i = index">
+      <th scope="row" class="text-center">{{ i + 1 }}</th>
+      <td>{{ exercicio.nome }}</td>
+      <td class="text-center">{{ exercicio.numero }}</td>
+      <td>
+        <div class="d-flex align-items-center">
+          <span class="tipo-cor bg-tipo{{ exercicio.tipo }}"></span>
+          <span>{{ exercicio.tipo }}</span>
+        </div>
+      </td>
+      <td class="text-end">
+        <button
+          class="btn btn-sm btn-light"
+          (click)="deleteExercicio(exercicio.id, exercicio.nome)"
+        >
+          <i class="fa fa-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

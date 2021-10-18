@@ -1,0 +1,10 @@
+.content {
+  overflow: hidden;
+  overflow-y: auto;
+  width: calc(100% -250px);
+  height: calc(100% - 64px);
+  position: absolute;
+  left: 250px;
+  right: 0;
+  padding: 20px;
+}

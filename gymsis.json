@@ -1,0 +1,97 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Gustavo",
+      "email": "gustavo@gmail.com",
+      "cpf": "01001001001",
+      "senha": "123456",
+      "tipo": "professor"
+    },
+    {
+      "id": 2,
+      "nome": "Bruno Bozz",
+      "email": "brunobozz@gmail.com",
+      "cpf": "01715847083",
+      "senha": "123456",
+      "tipo": "aluno"
+    }
+  ],
+  "tipos": [
+    {
+      "id": 1,
+      "nome": "Bíceps"
+    },
+    {
+      "id": 2,
+      "nome": "Tríceps"
+    },
+    {
+      "id": 3,
+      "nome": "Quadríceps"
+    },
+    {
+      "id": 4,
+      "nome": "Peito"
+    },
+    {
+      "id": 5,
+      "nome": "Perna"
+    },
+    {
+      "id": 6,
+      "nome": "Costas"
+    },
+    {
+      "id": 7,
+      "nome": "Glúteos"
+    }
+  ],
+  "exercicios": [
+    {
+      "id": 1,
+      "nome": "Voador",
+      "tipo": "Peito"
+    },
+    {
+      "id": 2,
+      "nome": "Voador Invertido",
+      "tipo": "Costas"
+    },
+    {
+      "id": 3,
+      "nome": "Supino Reto",
+      "tipo": "Peito"
+    },
+    {
+      "nome": "Abdominal Bola",
+      "tipo": "Abdômen",
+      "id": 5
+    },
+    {
+      "nome": "Abdominal V",
+      "tipo": "Abdômen",
+      "id": 6
+    },
+    {
+      "nome": "Supino Inclinado",
+      "tipo": "Peito",
+      "id": 7
+    }
+  ],
+  "treinos": [
+    {
+      "id": 1,
+      "user": 2,
+      "exercicios": [
+        {
+          "id": 1,
+          "exercicio": "Voador",
+          "aparelho": "23",
+          "repeticoes": "15/12/8",
+          "carga": "25/30/35"
+        }
+      ]
+    }
+  ]
+}

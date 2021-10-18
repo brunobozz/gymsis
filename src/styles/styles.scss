@@ -1,0 +1,45 @@
+@import "./fonts";
+@import "./custom-bootstrap-theme";
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  outline: 0px;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+select,
+select:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}

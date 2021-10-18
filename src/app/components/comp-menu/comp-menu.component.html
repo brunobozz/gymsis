@@ -1,0 +1,19 @@
+<!-- <button class="btn btn-dark text-light" (click)="toggleMenu()">
+  <i class="fa fa-bars"></i>
+</button> -->
+
+<div class="menu bg-grayD" [ngClass]="{ opened: menuOpened === true }">
+  <div class="d-grid gap-2">
+    <button
+      *ngFor="let menu of menuList"
+      class="btn text-light text-start"
+      [ngClass]="
+        menuSelected === menu.route ? 'btn-primary' : 'btn-grayD text-dark'
+      "
+      (click)="goRote(menu.route)"
+    >
+      <i class="fa" [ngClass]="menu.icon"></i>
+      <span class="ms-2">{{ menu.name }}</span>
+    </button>
+  </div>
+</div>
